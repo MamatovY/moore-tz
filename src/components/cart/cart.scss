@@ -1,0 +1,228 @@
+.cart {
+    text-align: left;
+    font-weight: 500;
+
+    h1 {
+        margin-bottom: 3%;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2.5%;
+
+        &-right {
+            position: relative;
+        }
+    }
+
+    .block {
+        background: #FFF;
+        padding: 3.42%;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.03);
+        border-radius: 5px;
+        margin-bottom: 30px;
+
+        h3 {
+            margin-bottom: 4%;
+        }
+    }
+
+    .field {
+        background: #F6F6FC;
+        border-radius: 5px;
+        padding: 4% 0 4% 20px;
+
+        label {
+            opacity: 0.5;
+        }
+
+        input {
+            font-weight: 600;
+        }
+    }
+
+    &__basket {
+        display: flex;
+        justify-content: space-between;
+
+        &.block h3 {
+            margin-bottom: 0;
+        }
+
+        &-arrow {
+            background: #F6F6FC;
+            cursor: pointer;
+            border-radius: 50%;
+            padding: 0 1%;
+        }
+
+        &.block {
+            margin-bottom: 1%;
+            padding: 2.28% 3.42%;
+        }
+    }
+
+    &__total {
+        top: 3%;
+        right: 3%;
+        position: sticky;
+        width: 100%;
+
+        &.block {
+            padding: 7.7%;
+        }
+
+        h3 {
+            margin-bottom: 6.5%;
+        }
+
+        &-main {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: space-between;
+
+            &-price {
+                text-align: right;
+                font-weight: 700;
+                margin-bottom: 13%;
+
+                span {
+                    color: #EA5A5A;
+                }
+            }
+
+            &-line {
+                border-bottom: 1px solid #000;
+                opacity: 0.2;
+                margin-bottom: 13%;
+            }
+        }
+
+        &-button {
+            margin: 6% 0;
+            text-align: center;
+            background: #EA5A5A;
+
+            color: #fff;
+            padding: 7% 0;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        &-terms {
+            text-align: center;
+
+            a {
+                color: #659FF6;
+            }
+        }
+    }
+
+    &__products {
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+            align-items: center;
+            padding: 4% 0;
+        }
+
+        &-item {
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+            &-img {
+                width: 50%;
+            }
+
+            &-price {
+                display: flex;
+                justify-content: space-between;
+
+                svg {
+                    color: #EA5A5A;
+                    width: 20%;
+                    cursor: pointer;
+                }
+            }
+
+            &-counter {
+                display: flex;
+                align-items: center;
+                background: #F7F7F7;
+                border-radius: 5px;
+                gap: 2%;
+                padding: 3%;
+                width: 60%;
+                justify-content: space-between;
+
+                svg {
+                    cursor: pointer;
+                    width: 25%;
+                }
+            }
+        }
+    }
+
+
+    &__contact {
+
+
+        &-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px 3%;
+
+            &-number {
+                display: grid;
+                grid-template-columns: 10fr 3fr;
+                gap: 5%;
+            }
+        }
+    }
+
+    &__im {
+        &-content {
+            display: grid;
+            gap: 20px;
+
+            input {
+                width: auto;
+            }
+        }
+    }
+
+    &__delivery {
+        a {
+            color: #5178DC;
+        }
+
+        &.block h3 {
+            margin-bottom: 0;
+        }
+
+        display: grid;
+        gap: 20px;
+
+        input {
+            width: auto;
+        }
+
+        span {
+            opacity: 0.5;
+        }
+
+        &-fields {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px 5%;
+
+        }
+
+        .field {
+
+            input {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from 'react';
+import './App.scss';
+import MainPage from './pages/mainPage';
 
 function App() {
+  useEffect(() => {
+    console.log('%c Не успел стилизовать чекбоксы и активный каталог, полностью адаптивный может где-то политает но из-за того что было мало времени не успел хотя были много идей по js и анимаций', 'background: #0037ae; color: #fff; font-size:25px;');
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+      <MainPage />
     </div>
   );
 }

@@ -1,0 +1,46 @@
+.footer {
+    margin-top: 10%;
+    padding: 5% 0 0 0;
+    background: #292929;
+    color: #FFF;
+    text-align: left;
+
+    h1 {
+        margin-bottom: 5%;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding-bottom: 5%;
+        border-bottom: 1px solid rgba($color: #fff, $alpha: 0.1);
+
+        >div {
+            >div {
+                margin-bottom: 10px;
+            }
+        }
+
+        span {
+            opacity: 0.5;
+        }
+
+        .images {
+            display: flex;
+            align-items: center;
+            gap: 3%;
+
+            svg {
+                width: 5%;
+            }
+        }
+    }
+
+    &__creator {
+        padding: 5% 0;
+
+        span {
+            opacity: 0.5;
+        }
+    }
+}
